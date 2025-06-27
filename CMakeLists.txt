@@ -38,23 +38,4 @@ pico_sdk_init()
 add_subdirectory(bmp280)
 add_subdirectory(src)
 
-# Add executable. Default name is the project name, version 0.1
 
-# pull in common dependencies
-# target_link_libraries(${PROJECT_NAME}
-#     pico_stdlib
-#     hardware_spi
-#     bmp280
-#     )
-
-# if (PICO_CYW43_SUPPORTED)
-#     target_link_libraries(${PROJECT_NAME} pico_cyw43_arch_none)
-# endif()
-
-# pico_enable_stdio_usb(${PROJECT_NAME} 1)
-# pico_enable_stdio_uart(${PROJECT_NAME} 0)
-
-# # create map/bin/hex file etc.
-# pico_add_extra_outputs(${PROJECT_NAME})
-
-# add url via pico_set_program_url
